@@ -1,0 +1,6 @@
+framework module Pods_MVVM_C_App_Core_NetworkingTests {
+  umbrella header "Pods-MVVM-C-App-Core-NetworkingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,737 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		71749CDBA9BBFE7822EA4063 /* Pods_MVVM_C_App_Core_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF03CB96825F1AD6E4F8FCDA /* Pods_MVVM_C_App_Core_Networking.framework */; };
+		7F4FFFCF846A82906D5C937A /* Pods_MVVM_C_App_Core_NetworkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 726AD2343933B56D9A1C10DE /* Pods_MVVM_C_App_Core_NetworkingTests.framework */; };
+		BF5EC3D722C527940068A24C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC3D622C527940068A24C /* AppDelegate.swift */; };
+		BF5EC3D922C527940068A24C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC3D822C527940068A24C /* ViewController.swift */; };
+		BF5EC3DC22C527940068A24C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EC3DA22C527940068A24C /* Main.storyboard */; };
+		BF5EC3DE22C527940068A24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5EC3DD22C527940068A24C /* Assets.xcassets */; };
+		BF5EC3E122C527940068A24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EC3DF22C527940068A24C /* LaunchScreen.storyboard */; };
+		BF5EC3EC22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC3EB22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift */; };
+		BF5EC3F722C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC3F622C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift */; };
+		BF5EC48322C52A380068A24C /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC48222C52A380068A24C /* Core.framework */; };
+		BF5EC48422C52A380068A24C /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC48222C52A380068A24C /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF5EC48722C52A850068A24C /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC48622C52A850068A24C /* Networking.framework */; };
+		BF5EC48822C52A850068A24C /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC48622C52A850068A24C /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D74589ACBA9B1B0763131C52 /* Pods_MVVM_C_App_Core_NetworkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFB9DEBA6BE114BFA9209CE9 /* Pods_MVVM_C_App_Core_NetworkingUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BF5EC3E822C527940068A24C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF5EC3CB22C527940068A24C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF5EC3D222C527940068A24C;
+			remoteInfo = "MVVM-C-App-Core-Networking";
+		};
+		BF5EC3F322C527940068A24C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BF5EC3CB22C527940068A24C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BF5EC3D222C527940068A24C;
+			remoteInfo = "MVVM-C-App-Core-Networking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		BF5EC43722C5294F0068A24C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				BF5EC48822C52A850068A24C /* Networking.framework in Embed Frameworks */,
+				BF5EC48422C52A380068A24C /* Core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1D91197127BCD831EEAC9D4C /* Pods-MVVM-C-App-Core-NetworkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-App-Core-NetworkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-C-App-Core-NetworkingTests/Pods-MVVM-C-App-Core-NetworkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		726AD2343933B56D9A1C10DE /* Pods_MVVM_C_App_Core_NetworkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_C_App_Core_NetworkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9E4F01367DAF6E5BB83464B5 /* Pods-MVVM-C-App-Core-NetworkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-App-Core-NetworkingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-C-App-Core-NetworkingUITests/Pods-MVVM-C-App-Core-NetworkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BF5EC3D322C527940068A24C /* MVVM-C-App-Core-Networking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C-App-Core-Networking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5EC3D622C527940068A24C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BF5EC3D822C527940068A24C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BF5EC3DB22C527940068A24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BF5EC3DD22C527940068A24C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BF5EC3E022C527940068A24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BF5EC3E222C527940068A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5EC3E722C527940068A24C /* MVVM-C-App-Core-NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C-App-Core-NetworkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5EC3EB22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_C_App_Core_NetworkingTests.swift; sourceTree = "<group>"; };
+		BF5EC3ED22C527940068A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5EC3F222C527940068A24C /* MVVM-C-App-Core-NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C-App-Core-NetworkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5EC3F622C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_C_App_Core_NetworkingUITests.swift; sourceTree = "<group>"; };
+		BF5EC3F822C527940068A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BF5EC48222C52A380068A24C /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF5EC48622C52A850068A24C /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFB9DEBA6BE114BFA9209CE9 /* Pods_MVVM_C_App_Core_NetworkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_C_App_Core_NetworkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C356206DBF4C345F9FA3909B /* Pods-MVVM-C-App-Core-NetworkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-App-Core-NetworkingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-C-App-Core-NetworkingTests/Pods-MVVM-C-App-Core-NetworkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		CFC375D96D39D862023700F2 /* Pods-MVVM-C-App-Core-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-App-Core-Networking.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-C-App-Core-Networking/Pods-MVVM-C-App-Core-Networking.release.xcconfig"; sourceTree = "<group>"; };
+		DACE9117F3BB42CCB4785D4D /* Pods-MVVM-C-App-Core-Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-App-Core-Networking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-C-App-Core-Networking/Pods-MVVM-C-App-Core-Networking.debug.xcconfig"; sourceTree = "<group>"; };
+		DF03CB96825F1AD6E4F8FCDA /* Pods_MVVM_C_App_Core_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_C_App_Core_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2EDDD819A13FE3D9126DAB1 /* Pods-MVVM-C-App-Core-NetworkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-App-Core-NetworkingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MVVM-C-App-Core-NetworkingUITests/Pods-MVVM-C-App-Core-NetworkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BF5EC3D022C527940068A24C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5EC48722C52A850068A24C /* Networking.framework in Frameworks */,
+				BF5EC48322C52A380068A24C /* Core.framework in Frameworks */,
+				71749CDBA9BBFE7822EA4063 /* Pods_MVVM_C_App_Core_Networking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5EC3E422C527940068A24C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7F4FFFCF846A82906D5C937A /* Pods_MVVM_C_App_Core_NetworkingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5EC3EF22C527940068A24C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D74589ACBA9B1B0763131C52 /* Pods_MVVM_C_App_Core_NetworkingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		BF5EC3CA22C527940068A24C = {
+			isa = PBXGroup;
+			children = (
+				BF5EC48522C52A690068A24C /* Frameworks */,
+				BF5EC3D522C527940068A24C /* MVVM-C-App-Core-Networking */,
+				BF5EC3EA22C527940068A24C /* MVVM-C-App-Core-NetworkingTests */,
+				BF5EC3F522C527940068A24C /* MVVM-C-App-Core-NetworkingUITests */,
+				BF5EC3D422C527940068A24C /* Products */,
+				EAD965AE32C52C5AF74D661F /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		BF5EC3D422C527940068A24C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EC3D322C527940068A24C /* MVVM-C-App-Core-Networking.app */,
+				BF5EC3E722C527940068A24C /* MVVM-C-App-Core-NetworkingTests.xctest */,
+				BF5EC3F222C527940068A24C /* MVVM-C-App-Core-NetworkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BF5EC3D522C527940068A24C /* MVVM-C-App-Core-Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EC3D622C527940068A24C /* AppDelegate.swift */,
+				BF5EC3D822C527940068A24C /* ViewController.swift */,
+				BF5EC3DA22C527940068A24C /* Main.storyboard */,
+				BF5EC3DD22C527940068A24C /* Assets.xcassets */,
+				BF5EC3DF22C527940068A24C /* LaunchScreen.storyboard */,
+				BF5EC3E222C527940068A24C /* Info.plist */,
+			);
+			path = "MVVM-C-App-Core-Networking";
+			sourceTree = "<group>";
+		};
+		BF5EC3EA22C527940068A24C /* MVVM-C-App-Core-NetworkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EC3EB22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift */,
+				BF5EC3ED22C527940068A24C /* Info.plist */,
+			);
+			path = "MVVM-C-App-Core-NetworkingTests";
+			sourceTree = "<group>";
+		};
+		BF5EC3F522C527940068A24C /* MVVM-C-App-Core-NetworkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EC3F622C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift */,
+				BF5EC3F822C527940068A24C /* Info.plist */,
+			);
+			path = "MVVM-C-App-Core-NetworkingUITests";
+			sourceTree = "<group>";
+		};
+		BF5EC48522C52A690068A24C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF5EC48622C52A850068A24C /* Networking.framework */,
+				BF5EC48222C52A380068A24C /* Core.framework */,
+				DF03CB96825F1AD6E4F8FCDA /* Pods_MVVM_C_App_Core_Networking.framework */,
+				726AD2343933B56D9A1C10DE /* Pods_MVVM_C_App_Core_NetworkingTests.framework */,
+				BFB9DEBA6BE114BFA9209CE9 /* Pods_MVVM_C_App_Core_NetworkingUITests.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		EAD965AE32C52C5AF74D661F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DACE9117F3BB42CCB4785D4D /* Pods-MVVM-C-App-Core-Networking.debug.xcconfig */,
+				CFC375D96D39D862023700F2 /* Pods-MVVM-C-App-Core-Networking.release.xcconfig */,
+				1D91197127BCD831EEAC9D4C /* Pods-MVVM-C-App-Core-NetworkingTests.debug.xcconfig */,
+				C356206DBF4C345F9FA3909B /* Pods-MVVM-C-App-Core-NetworkingTests.release.xcconfig */,
+				9E4F01367DAF6E5BB83464B5 /* Pods-MVVM-C-App-Core-NetworkingUITests.debug.xcconfig */,
+				E2EDDD819A13FE3D9126DAB1 /* Pods-MVVM-C-App-Core-NetworkingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BF5EC3D222C527940068A24C /* MVVM-C-App-Core-Networking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5EC3FB22C527940068A24C /* Build configuration list for PBXNativeTarget "MVVM-C-App-Core-Networking" */;
+			buildPhases = (
+				2976B365E4E63184DE203DB8 /* [CP] Check Pods Manifest.lock */,
+				BF5EC3CF22C527940068A24C /* Sources */,
+				BF5EC3D022C527940068A24C /* Frameworks */,
+				BF5EC3D122C527940068A24C /* Resources */,
+				BF5EC43722C5294F0068A24C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MVVM-C-App-Core-Networking";
+			productName = "MVVM-C-App-Core-Networking";
+			productReference = BF5EC3D322C527940068A24C /* MVVM-C-App-Core-Networking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BF5EC3E622C527940068A24C /* MVVM-C-App-Core-NetworkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5EC3FE22C527940068A24C /* Build configuration list for PBXNativeTarget "MVVM-C-App-Core-NetworkingTests" */;
+			buildPhases = (
+				BC5DED6628A825BED656B66F /* [CP] Check Pods Manifest.lock */,
+				BF5EC3E322C527940068A24C /* Sources */,
+				BF5EC3E422C527940068A24C /* Frameworks */,
+				BF5EC3E522C527940068A24C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF5EC3E922C527940068A24C /* PBXTargetDependency */,
+			);
+			name = "MVVM-C-App-Core-NetworkingTests";
+			productName = "MVVM-C-App-Core-NetworkingTests";
+			productReference = BF5EC3E722C527940068A24C /* MVVM-C-App-Core-NetworkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BF5EC3F122C527940068A24C /* MVVM-C-App-Core-NetworkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BF5EC40122C527940068A24C /* Build configuration list for PBXNativeTarget "MVVM-C-App-Core-NetworkingUITests" */;
+			buildPhases = (
+				363415D5DCE33FCFE56F498C /* [CP] Check Pods Manifest.lock */,
+				BF5EC3EE22C527940068A24C /* Sources */,
+				BF5EC3EF22C527940068A24C /* Frameworks */,
+				BF5EC3F022C527940068A24C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BF5EC3F422C527940068A24C /* PBXTargetDependency */,
+			);
+			name = "MVVM-C-App-Core-NetworkingUITests";
+			productName = "MVVM-C-App-Core-NetworkingUITests";
+			productReference = BF5EC3F222C527940068A24C /* MVVM-C-App-Core-NetworkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BF5EC3CB22C527940068A24C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Oguz Parlak";
+				TargetAttributes = {
+					BF5EC3D222C527940068A24C = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					BF5EC3E622C527940068A24C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BF5EC3D222C527940068A24C;
+					};
+					BF5EC3F122C527940068A24C = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = BF5EC3D222C527940068A24C;
+					};
+				};
+			};
+			buildConfigurationList = BF5EC3CE22C527940068A24C /* Build configuration list for PBXProject "MVVM-C-App-Core-Networking" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BF5EC3CA22C527940068A24C;
+			productRefGroup = BF5EC3D422C527940068A24C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BF5EC3D222C527940068A24C /* MVVM-C-App-Core-Networking */,
+				BF5EC3E622C527940068A24C /* MVVM-C-App-Core-NetworkingTests */,
+				BF5EC3F122C527940068A24C /* MVVM-C-App-Core-NetworkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BF5EC3D122C527940068A24C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5EC3E122C527940068A24C /* LaunchScreen.storyboard in Resources */,
+				BF5EC3DE22C527940068A24C /* Assets.xcassets in Resources */,
+				BF5EC3DC22C527940068A24C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5EC3E522C527940068A24C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5EC3F022C527940068A24C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2976B365E4E63184DE203DB8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-C-App-Core-Networking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		363415D5DCE33FCFE56F498C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-C-App-Core-NetworkingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BC5DED6628A825BED656B66F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-C-App-Core-NetworkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BF5EC3CF22C527940068A24C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5EC3D922C527940068A24C /* ViewController.swift in Sources */,
+				BF5EC3D722C527940068A24C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5EC3E322C527940068A24C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5EC3EC22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BF5EC3EE22C527940068A24C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF5EC3F722C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BF5EC3E922C527940068A24C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF5EC3D222C527940068A24C /* MVVM-C-App-Core-Networking */;
+			targetProxy = BF5EC3E822C527940068A24C /* PBXContainerItemProxy */;
+		};
+		BF5EC3F422C527940068A24C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BF5EC3D222C527940068A24C /* MVVM-C-App-Core-Networking */;
+			targetProxy = BF5EC3F322C527940068A24C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BF5EC3DA22C527940068A24C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5EC3DB22C527940068A24C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BF5EC3DF22C527940068A24C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BF5EC3E022C527940068A24C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BF5EC3F922C527940068A24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BF5EC3FA22C527940068A24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BF5EC3FC22C527940068A24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DACE9117F3BB42CCB4785D4D /* Pods-MVVM-C-App-Core-Networking.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL7GD8S24Y;
+				INFOPLIST_FILE = "MVVM-C-App-Core-Networking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzparlak.MVVM-C-App-Core-Networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BF5EC3FD22C527940068A24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFC375D96D39D862023700F2 /* Pods-MVVM-C-App-Core-Networking.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL7GD8S24Y;
+				INFOPLIST_FILE = "MVVM-C-App-Core-Networking/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzparlak.MVVM-C-App-Core-Networking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BF5EC3FF22C527940068A24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D91197127BCD831EEAC9D4C /* Pods-MVVM-C-App-Core-NetworkingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL7GD8S24Y;
+				INFOPLIST_FILE = "MVVM-C-App-Core-NetworkingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzparlak.MVVM-C-App-Core-NetworkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-C-App-Core-Networking.app/MVVM-C-App-Core-Networking";
+			};
+			name = Debug;
+		};
+		BF5EC40022C527940068A24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C356206DBF4C345F9FA3909B /* Pods-MVVM-C-App-Core-NetworkingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL7GD8S24Y;
+				INFOPLIST_FILE = "MVVM-C-App-Core-NetworkingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzparlak.MVVM-C-App-Core-NetworkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MVVM-C-App-Core-Networking.app/MVVM-C-App-Core-Networking";
+			};
+			name = Release;
+		};
+		BF5EC40222C527940068A24C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E4F01367DAF6E5BB83464B5 /* Pods-MVVM-C-App-Core-NetworkingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL7GD8S24Y;
+				INFOPLIST_FILE = "MVVM-C-App-Core-NetworkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzparlak.MVVM-C-App-Core-NetworkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MVVM-C-App-Core-Networking";
+			};
+			name = Debug;
+		};
+		BF5EC40322C527940068A24C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2EDDD819A13FE3D9126DAB1 /* Pods-MVVM-C-App-Core-NetworkingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = HL7GD8S24Y;
+				INFOPLIST_FILE = "MVVM-C-App-Core-NetworkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.oguzparlak.MVVM-C-App-Core-NetworkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MVVM-C-App-Core-Networking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BF5EC3CE22C527940068A24C /* Build configuration list for PBXProject "MVVM-C-App-Core-Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5EC3F922C527940068A24C /* Debug */,
+				BF5EC3FA22C527940068A24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5EC3FB22C527940068A24C /* Build configuration list for PBXNativeTarget "MVVM-C-App-Core-Networking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5EC3FC22C527940068A24C /* Debug */,
+				BF5EC3FD22C527940068A24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5EC3FE22C527940068A24C /* Build configuration list for PBXNativeTarget "MVVM-C-App-Core-NetworkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5EC3FF22C527940068A24C /* Debug */,
+				BF5EC40022C527940068A24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BF5EC40122C527940068A24C /* Build configuration list for PBXNativeTarget "MVVM-C-App-Core-NetworkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BF5EC40222C527940068A24C /* Debug */,
+				BF5EC40322C527940068A24C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BF5EC3CB22C527940068A24C /* Project object */;
+}
