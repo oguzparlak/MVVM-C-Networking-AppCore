@@ -7,19 +7,6 @@ def alamofire
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5'
 end
 
-target 'MVVM-C-App-Core-Networking' do
-  target 'MVVM-C-App-Core-NetworkingTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'MVVM-C-App-Core-NetworkingUITests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-end
-
 target 'Networking' do
   project 'Networking/Networking'
   alamofire

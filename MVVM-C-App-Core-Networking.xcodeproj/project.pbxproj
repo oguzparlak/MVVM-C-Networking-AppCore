@@ -14,8 +14,6 @@
 		BF5EC3DC22C527940068A24C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EC3DA22C527940068A24C /* Main.storyboard */; };
 		BF5EC3DE22C527940068A24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5EC3DD22C527940068A24C /* Assets.xcassets */; };
 		BF5EC3E122C527940068A24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EC3DF22C527940068A24C /* LaunchScreen.storyboard */; };
-		BF5EC3EC22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC3EB22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift */; };
-		BF5EC3F722C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC3F622C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift */; };
 		BF5EC48322C52A380068A24C /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC48222C52A380068A24C /* Core.framework */; };
 		BF5EC48422C52A380068A24C /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC48222C52A380068A24C /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF5EC48722C52A850068A24C /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC48622C52A850068A24C /* Networking.framework */; };
@@ -67,11 +65,7 @@
 		BF5EC3E022C527940068A24C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF5EC3E222C527940068A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5EC3E722C527940068A24C /* MVVM-C-App-Core-NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C-App-Core-NetworkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF5EC3EB22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_C_App_Core_NetworkingTests.swift; sourceTree = "<group>"; };
-		BF5EC3ED22C527940068A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5EC3F222C527940068A24C /* MVVM-C-App-Core-NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C-App-Core-NetworkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF5EC3F622C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVM_C_App_Core_NetworkingUITests.swift; sourceTree = "<group>"; };
-		BF5EC3F822C527940068A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5EC48222C52A380068A24C /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5EC48622C52A850068A24C /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFB9DEBA6BE114BFA9209CE9 /* Pods_MVVM_C_App_Core_NetworkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_C_App_Core_NetworkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,8 +111,6 @@
 			children = (
 				BF5EC48522C52A690068A24C /* Frameworks */,
 				BF5EC3D522C527940068A24C /* MVVM-C-App-Core-Networking */,
-				BF5EC3EA22C527940068A24C /* MVVM-C-App-Core-NetworkingTests */,
-				BF5EC3F522C527940068A24C /* MVVM-C-App-Core-NetworkingUITests */,
 				BF5EC3D422C527940068A24C /* Products */,
 				EAD965AE32C52C5AF74D661F /* Pods */,
 			);
@@ -145,24 +137,6 @@
 				BF5EC3E222C527940068A24C /* Info.plist */,
 			);
 			path = "MVVM-C-App-Core-Networking";
-			sourceTree = "<group>";
-		};
-		BF5EC3EA22C527940068A24C /* MVVM-C-App-Core-NetworkingTests */ = {
-			isa = PBXGroup;
-			children = (
-				BF5EC3EB22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift */,
-				BF5EC3ED22C527940068A24C /* Info.plist */,
-			);
-			path = "MVVM-C-App-Core-NetworkingTests";
-			sourceTree = "<group>";
-		};
-		BF5EC3F522C527940068A24C /* MVVM-C-App-Core-NetworkingUITests */ = {
-			isa = PBXGroup;
-			children = (
-				BF5EC3F622C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift */,
-				BF5EC3F822C527940068A24C /* Info.plist */,
-			);
-			path = "MVVM-C-App-Core-NetworkingUITests";
 			sourceTree = "<group>";
 		};
 		BF5EC48522C52A690068A24C /* Frameworks */ = {
@@ -403,7 +377,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5EC3EC22C527940068A24C /* MVVM_C_App_Core_NetworkingTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,7 +384,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF5EC3F722C527940068A24C /* MVVM_C_App_Core_NetworkingUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
