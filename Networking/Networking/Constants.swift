@@ -10,15 +10,18 @@ import Foundation
 
 public struct Constants {
     
-    //The API's base URL
-    public static let baseUrl = "http://138.68.103.38:3000/"
+    /// The API's base URL
+    public static let baseUrl = "https://api.themoviedb.org/3/"
     
-    //The parameters (Queries) that we're gonna use
+    /// Paste your API Key over here
+    public static let tmdbApiKey = "c5e241681c87e0206115395de7435e28"
+    
+    /// The parameters (Queries) that we're gonna use
     public struct Parameters {
-        public static let currency_type = "currency_type"
+        public static let api_key = "api_key"
     }
     
-    //The header fields
+    /// The header fields
     public enum HttpHeaderField: String {
         case authentication = "Authorization"
         case contentType = "Content-Type"
@@ -26,7 +29,7 @@ public struct Constants {
         case acceptEncoding = "Accept-Encoding"
     }
     
-    //The content type (JSON)
+    /// The content type (JSON)
     public enum ContentType: String {
         case json = "application/json"
     }

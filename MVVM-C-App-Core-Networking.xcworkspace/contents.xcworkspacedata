@@ -13,4 +13,7 @@
    <FileRef
       location = "group:Pods/Pods.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:MVVM-C-App-Core-Networking.xcodeproj">
+   </FileRef>
 </Workspace>

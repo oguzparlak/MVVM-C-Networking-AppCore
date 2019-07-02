@@ -15,18 +15,20 @@ public struct RequestConfigurator {
     
     // Parameters that will be passed into url
     // as query string
-    public var parameters: Parameters? = [:]
+    public var parameters: Parameters?
     
     // Additional path will be added to source url
-    public var path: String? = ""
+    public var path: String?
     
     // The HTTP Method of the request
     // Ex: .get, .post
-    public var httpMethod: HTTPMethod? = .get
+    public var httpMethod: HTTPMethod?
     
     // MARK: - Initializer
-    public init(path: String) {
+    public init(path: String = "", parameters: Parameters? = [:], httpMethod: HTTPMethod? = .get) {
         self.path = path
+        self.parameters = parameters
+        self.httpMethod = httpMethod
     }
     
 }

@@ -9,7 +9,7 @@
 import Foundation
 import UIKit
 
-public class ConcreteCoordinator: NSObject, Coordinator, UINavigationControllerDelegate  {
+open class ConcreteCoordinator: NSObject, Coordinator, UINavigationControllerDelegate  {
     
     // MARK: - Variables
     public var navigationController: UINavigationController
@@ -42,7 +42,7 @@ public class ConcreteCoordinator: NSObject, Coordinator, UINavigationControllerD
         return false
     }
     
-    public func start() {
+    open func start() {
         fatalError("start() should be overriden")
     }
     

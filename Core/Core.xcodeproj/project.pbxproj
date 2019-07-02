@@ -20,7 +20,6 @@
 		BF5EC4AB22C564410068A24C /* UINavigationController+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC4AA22C564410068A24C /* UINavigationController+.swift */; };
 		BF5EC4AD22C564730068A24C /* UIView+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC4AC22C564730068A24C /* UIView+.swift */; };
 		BF5EC4AF22C564960068A24C /* UIDevice+.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC4AE22C564960068A24C /* UIDevice+.swift */; };
-		BF5EC4B222C564C50068A24C /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC4B122C564C50068A24C /* Colors.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		BF5EC4AA22C564410068A24C /* UINavigationController+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UINavigationController+.swift"; sourceTree = "<group>"; };
 		BF5EC4AC22C564730068A24C /* UIView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+.swift"; sourceTree = "<group>"; };
 		BF5EC4AE22C564960068A24C /* UIDevice+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+.swift"; sourceTree = "<group>"; };
-		BF5EC4B122C564C50068A24C /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,7 +160,6 @@
 		BF5EC4B022C564BA0068A24C /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				BF5EC4B122C564C50068A24C /* Colors.swift */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -277,7 +274,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF5EC49822C560850068A24C /* DataManager.swift in Sources */,
-				BF5EC4B222C564C50068A24C /* Colors.swift in Sources */,
 				BF5EC4AF22C564960068A24C /* UIDevice+.swift in Sources */,
 				BF5EC49A22C561A90068A24C /* KeyValueManager.swift in Sources */,
 				BF5EC4A322C562B40068A24C /* Coordinator.swift in Sources */,
@@ -444,6 +440,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -471,6 +468,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Core/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

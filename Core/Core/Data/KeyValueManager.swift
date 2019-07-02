@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class KeyValueManager<T: Codable, N: Codable>: DataManager {
+open class KeyValueManager<T: Codable, N: Codable>: DataManager {
     
     // MARK: - Private Variables
     private let dataNotifier: DataNotifier<N>?
