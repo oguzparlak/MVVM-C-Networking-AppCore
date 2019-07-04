@@ -6,6 +6,9 @@
 
 A lightweight, easy and ready to use, highly extensible core module for you to integrate into your project. This project aims to create clean, extensible and weakly coupled architecture for everybody to use.
 
+# Demo
+![Demo](https://user-images.githubusercontent.com/14904310/60686332-c222bd00-9eb0-11e9-9363-541a51661b4b.GIF)
+
 # Installation Guide
 `git clone https://github.com/oguzparlak/MVVM-C-Networking-AppCore.git
 `
