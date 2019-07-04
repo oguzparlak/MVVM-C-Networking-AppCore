@@ -80,10 +80,10 @@ class TVShowListingView: UIViewController, Storyboarded {
         tableView.register(UINib(nibName: "MovieListingCell", bundle: nil), forCellReuseIdentifier: "MovieListingCell")
     }
 
-    }
+}
 
-    // MARK: - Lifecycle
-    extension TVShowListingView {
+// MARK: - Lifecycle
+extension TVShowListingView {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -190,13 +190,13 @@ class TVShowRepository: Repository {
     }
 
     func getRemoteDataSource(responseCallback: @escaping (Result<TVShowContainer?, ApiError>) -> Void) {
-    ApiClient.request(ApiRouter(requestConfigurator: requestConfigurator), completion: responseCallback)
+        ApiClient.request(ApiRouter(requestConfigurator: requestConfigurator), completion: responseCallback)
     }
 
 }
 ```
 
-## Networking
+## Networking
 Define your endpoints for specific feature.
 
 ```swift
@@ -232,5 +232,5 @@ enum TVShowEndPoint : EndpointProvider {
 }
 ```
 
-# Acknowledgement
+# Acknowledgement
 Thank you [Paul Hudson](https://www.hackingwithswift.com/about) for clarifying the `Coordinator` pattern. And also special thanks to [Ali Can Batur](https://github.com/alicanbatur) for code review.
