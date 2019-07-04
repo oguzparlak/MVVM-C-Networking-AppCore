@@ -9,10 +9,13 @@ A lightweight, easy and ready to use, highly extensible core module for you to i
 # Installation Guide
 `git clone https://github.com/oguzparlak/MVVM-C-Networking-AppCore.git
 `
+
 `cd MVVM-C-Networking-AppCore
 `
+
 `pod install
 `
+
 `open MVVM-C-App-Core-Networking.xcworkspace
 `
 
