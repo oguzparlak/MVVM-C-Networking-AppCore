@@ -18,8 +18,9 @@ extension UINavigationController {
     public func configureTheme() {
         self.navigationBar.tintColor = .white
         if #available(iOS 11.0, *) {
-            self.navigationBar.barTintColor = UIColor(named: "color_theme")
+            self.navigationBar.barTintColor = .black
         }
+        navigationBar.barStyle = .black
         self.navigationBar.titleTextAttributes = [
             NSAttributedString.Key.font: UIFont(name: "Futura-Bold", size: 17) as Any,
             NSAttributedString.Key.foregroundColor: UIColor.white

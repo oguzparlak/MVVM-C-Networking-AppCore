@@ -18,7 +18,8 @@ extension TVShowListingView: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let tvShowView = tableView.dequeueReusableCell(withIdentifier: "MovieListingCell") as! MovieListingCell
         let tvShowViewModels = tvShowViewModel?.tvShowCellViewModels
-        let tvShowCellViewModel = tvShowViewModels?[indexPath.row]
+        let currentIndex = indexPath.row
+        let tvShowCellViewModel = tvShowViewModels?[currentIndex]
         tvShowView.tvShowViewModel = tvShowCellViewModel
         return tvShowView
     }

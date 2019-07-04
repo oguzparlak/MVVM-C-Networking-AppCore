@@ -18,6 +18,7 @@ class RootController: UITabBarController {
         
         // MARK: - Customize UI
         if #available(iOS 11.0, *) {
+            tabBar.barTintColor = .black
             tabBar.tintColor = UIColor(named: "color_theme")
         }
         UITabBarItem.appearance().setTitleTextAttributes([NSAttributedString.Key.font: UIFont(name: "Futura", size: 11) as Any], for: .normal)

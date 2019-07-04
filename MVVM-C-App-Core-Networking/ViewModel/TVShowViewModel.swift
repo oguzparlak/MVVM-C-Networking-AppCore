@@ -31,7 +31,8 @@ class TVShowViewModel {
         fetchTVShows()
     }
     
-    func fetchTVShows() {
+    func fetchTVShows(shouldApplyPagination: Bool = false) {
+        if shouldApplyPagination { tvShowRepository.incrementPage() }
         self.tvShowRepository.getRemoteDataSource(responseCallback: { [weak self] result in
             switch result {
             case .success(let tvShows):
@@ -43,7 +44,6 @@ class TVShowViewModel {
     }
     
     func updateCellViewModels() {
-        tvShowCellViewModels.removeAll()
         let tvShows = tvShowContainer?.results ?? []
         for tvShow in tvShows {
             tvShowCellViewModels.append(TVShowCellViewModel(tvShow: tvShow))

@@ -14,9 +14,21 @@ class TVShowRepository: Repository {
     
     typealias T = TVShowContainer?
     
-    private let requestConfigurator: RequestConfigurator
+    private var requestConfigurator: RequestConfigurator
     
     private var dataManager: TVShowDataManager?
+    
+    private var currentPage: Int = 1 {
+        didSet {
+            requestConfigurator.parameters = [
+                "page" : String(currentPage),
+                Constants.Parameters.api_key: Constants.tmdbApiKey]
+        }
+    }
+    
+    func incrementPage() {
+        currentPage += 1
+    }
     
     public init(requestConfigurator: RequestConfigurator, dataManager: TVShowDataManager? = TVShowDataManager(dataNotifier: DataNotifier<TVShowContainer>(dataCallback: { (container) in
         

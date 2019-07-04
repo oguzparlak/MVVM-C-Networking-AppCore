@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF014FEC22CE8245006669CD /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF014FEB22CE8245006669CD /* Networking.framework */; };
 		BF5EC47022C52A080068A24C /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC46622C52A080068A24C /* Core.framework */; };
 		BF5EC47522C52A080068A24C /* CoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC47422C52A080068A24C /* CoreTests.swift */; };
 		BF5EC47722C52A080068A24C /* Core.h in Headers */ = {isa = PBXBuildFile; fileRef = BF5EC46922C52A080068A24C /* Core.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		BF014FEB22CE8245006669CD /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5EC46622C52A080068A24C /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5EC46922C52A080068A24C /* Core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Core.h; sourceTree = "<group>"; };
 		BF5EC46A22C52A080068A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF014FEC22CE8245006669CD /* Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +73,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF014FEA22CE8245006669CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF014FEB22CE8245006669CD /* Networking.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		BF5EC45C22C52A080068A24C = {
 			isa = PBXGroup;
 			children = (
 				BF5EC46822C52A080068A24C /* Core */,
 				BF5EC47322C52A080068A24C /* CoreTests */,
 				BF5EC46722C52A080068A24C /* Products */,
+				BF014FEA22CE8245006669CD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};

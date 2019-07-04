@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8935CC710CA171836C3DEE2A /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D433F93E0A874F05353D7025 /* Pods_Networking.framework */; };
 		BF0BA6C322C8C56C00AA3CA3 /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BA6C222C8C56C00AA3CA3 /* EndpointProvider.swift */; };
 		BF5EC44C22C529AA0068A24C /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC44222C529AA0068A24C /* Networking.framework */; };
 		BF5EC45122C529AA0068A24C /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC45022C529AA0068A24C /* NetworkingTests.swift */; };
@@ -45,7 +44,6 @@
 		BF5EC49122C55F0A0068A24C /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
 		BF5EC49322C55F2A0068A24C /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		BF5EC49522C560410068A24C /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		D433F93E0A874F05353D7025 /* Pods_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0BC82450D43EDC58BD5D5C7 /* Pods-Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.debug.xcconfig"; path = "../Pods/Target Support Files/Pods-Networking/Pods-Networking.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -54,7 +52,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8935CC710CA171836C3DEE2A /* Pods_Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,7 +69,6 @@
 		A4670897EA0F6361F5EE57E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D433F93E0A874F05353D7025 /* Pods_Networking.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

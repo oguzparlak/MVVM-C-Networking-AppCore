@@ -26,6 +26,7 @@ class TVShowListingView: UIViewController, Storyboarded {
     func initTableView() {
         tableView.delegate = self
         tableView.dataSource = self
+        tableView.prefetchDataSource = self
         tableView.rowHeight = UITableView.automaticDimension
         tableView.backgroundColor = .black
         tableView.register(UINib(nibName: "MovieListingCell", bundle: nil), forCellReuseIdentifier: "MovieListingCell")

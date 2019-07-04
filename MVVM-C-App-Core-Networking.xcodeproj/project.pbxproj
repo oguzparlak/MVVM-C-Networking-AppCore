@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BF014FE322CE7D42006669CD /* TVShowListingView+UITableViewDataSourcePrefetching.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF014FE222CE7D42006669CD /* TVShowListingView+UITableViewDataSourcePrefetching.swift */; };
+		BF014FE522CE819C006669CD /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF014FE422CE819C006669CD /* Core.framework */; };
+		BF014FE622CE819C006669CD /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF014FE422CE819C006669CD /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		BF014FE822CE819C006669CD /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF014FE722CE819C006669CD /* Networking.framework */; };
+		BF014FE922CE819C006669CD /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF014FE722CE819C006669CD /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BF0BA6C122C8C4E400AA3CA3 /* TVShowEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BA6C022C8C4E400AA3CA3 /* TVShowEndPoint.swift */; };
 		BF0BA6C622C8C7EB00AA3CA3 /* TVShowRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BA6C522C8C7EB00AA3CA3 /* TVShowRepository.swift */; };
 		BF0BA6C922C8CB6B00AA3CA3 /* TVShowDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BA6C822C8CB6B00AA3CA3 /* TVShowDataManager.swift */; };
@@ -21,10 +26,6 @@
 		BF5EC3DC22C527940068A24C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EC3DA22C527940068A24C /* Main.storyboard */; };
 		BF5EC3DE22C527940068A24C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BF5EC3DD22C527940068A24C /* Assets.xcassets */; };
 		BF5EC3E122C527940068A24C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF5EC3DF22C527940068A24C /* LaunchScreen.storyboard */; };
-		BF68B48B22CC03AB0094FEDF /* Core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF68B48A22CC039C0094FEDF /* Core.framework */; };
-		BF68B48C22CC03AB0094FEDF /* Core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF68B48A22CC039C0094FEDF /* Core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		BF68B48D22CC03AB0094FEDF /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF68B48922CC039C0094FEDF /* Networking.framework */; };
-		BF68B48E22CC03AB0094FEDF /* Networking.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = BF68B48922CC039C0094FEDF /* Networking.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		BFF3459122C91F8500D7470C /* TVShowListingView+TVShowInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3459022C91F8500D7470C /* TVShowListingView+TVShowInteractor.swift */; };
 		BFF3459422C91FC000D7470C /* TVShowListView+UITableViewDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3459322C91FC000D7470C /* TVShowListView+UITableViewDelegate.swift */; };
 		BFF3459622C91FEB00D7470C /* TVShowListingView+UITableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3459522C91FEB00D7470C /* TVShowListingView+UITableViewDataSource.swift */; };
@@ -57,8 +58,8 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				BF68B48E22CC03AB0094FEDF /* Networking.framework in Embed Frameworks */,
-				BF68B48C22CC03AB0094FEDF /* Core.framework in Embed Frameworks */,
+				BF014FE922CE819C006669CD /* Networking.framework in Embed Frameworks */,
+				BF014FE622CE819C006669CD /* Core.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,6 +67,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		BF014FE222CE7D42006669CD /* TVShowListingView+UITableViewDataSourcePrefetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVShowListingView+UITableViewDataSourcePrefetching.swift"; sourceTree = "<group>"; };
+		BF014FE422CE819C006669CD /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF014FE722CE819C006669CD /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF0BA6C022C8C4E400AA3CA3 /* TVShowEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowEndPoint.swift; sourceTree = "<group>"; };
 		BF0BA6C522C8C7EB00AA3CA3 /* TVShowRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowRepository.swift; sourceTree = "<group>"; };
 		BF0BA6C822C8CB6B00AA3CA3 /* TVShowDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowDataManager.swift; sourceTree = "<group>"; };
@@ -84,8 +88,6 @@
 		BF5EC3E222C527940068A24C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BF5EC3E722C527940068A24C /* MVVM-C-App-Core-NetworkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C-App-Core-NetworkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF5EC3F222C527940068A24C /* MVVM-C-App-Core-NetworkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVVM-C-App-Core-NetworkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		BF68B48922CC039C0094FEDF /* Networking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Networking.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MVVM-C-App-Core-Networking-aljluqpdedeoxheszwvgxvovktvc/Build/Products/Debug-iphoneos/Networking.framework"; sourceTree = "<group>"; };
-		BF68B48A22CC039C0094FEDF /* Core.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Core.framework; path = "../../../../Library/Developer/Xcode/DerivedData/MVVM-C-App-Core-Networking-aljluqpdedeoxheszwvgxvovktvc/Build/Products/Debug-iphoneos/Core.framework"; sourceTree = "<group>"; };
 		BFF3459022C91F8500D7470C /* TVShowListingView+TVShowInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVShowListingView+TVShowInteractor.swift"; sourceTree = "<group>"; };
 		BFF3459322C91FC000D7470C /* TVShowListView+UITableViewDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVShowListView+UITableViewDelegate.swift"; sourceTree = "<group>"; };
 		BFF3459522C91FEB00D7470C /* TVShowListingView+UITableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVShowListingView+UITableViewDataSource.swift"; sourceTree = "<group>"; };
@@ -99,8 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BF68B48B22CC03AB0094FEDF /* Core.framework in Frameworks */,
-				BF68B48D22CC03AB0094FEDF /* Networking.framework in Frameworks */,
+				BF014FE822CE819C006669CD /* Networking.framework in Frameworks */,
+				BF014FE522CE819C006669CD /* Core.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +202,8 @@
 		BF5EC3CA22C527940068A24C = {
 			isa = PBXGroup;
 			children = (
+				BF014FE722CE819C006669CD /* Networking.framework */,
+				BF014FE422CE819C006669CD /* Core.framework */,
 				BF5EC3D622C527940068A24C /* AppDelegate.swift */,
 				BF0BA6D422C8DEA600AA3CA3 /* Root */,
 				BF5EC48522C52A690068A24C /* Frameworks */,
@@ -241,8 +245,6 @@
 		BF5EC48522C52A690068A24C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				BF68B48922CC039C0094FEDF /* Networking.framework */,
-				BF68B48A22CC039C0094FEDF /* Core.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -253,6 +255,7 @@
 				BFF3459022C91F8500D7470C /* TVShowListingView+TVShowInteractor.swift */,
 				BFF3459322C91FC000D7470C /* TVShowListView+UITableViewDelegate.swift */,
 				BFF3459522C91FEB00D7470C /* TVShowListingView+UITableViewDataSource.swift */,
+				BF014FE222CE7D42006669CD /* TVShowListingView+UITableViewDataSourcePrefetching.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -393,6 +396,7 @@
 				BF0BA6C622C8C7EB00AA3CA3 /* TVShowRepository.swift in Sources */,
 				BF0BA6D022C8CDBD00AA3CA3 /* TVShowContainer.swift in Sources */,
 				BF0BA6D322C8D61400AA3CA3 /* TVShowListingCoordinator.swift in Sources */,
+				BF014FE322CE7D42006669CD /* TVShowListingView+UITableViewDataSourcePrefetching.swift in Sources */,
 				BF0BA6C922C8CB6B00AA3CA3 /* TVShowDataManager.swift in Sources */,
 				BF0BA6CE22C8CBE700AA3CA3 /* TVShow.swift in Sources */,
 				BFF3459622C91FEB00D7470C /* TVShowListingView+UITableViewDataSource.swift in Sources */,

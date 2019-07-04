@@ -16,12 +16,14 @@ def uiPods
 end
 
 target 'MVVM-C-App-Core-Networking' do
+  use_frameworks!
   project 'MVVM-C-App-Core-Networking'
   alamofire
   uiPods
 end
 
 target 'Networking' do
+  use_frameworks!
   project 'Networking/Networking'
   alamofire
 end
