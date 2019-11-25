@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B39647A9CDFEDEB2849BF7AB /* Pods_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 149B113FA77B37497D09AB7D /* Pods_Networking.framework */; };
 		BF0BA6C322C8C56C00AA3CA3 /* EndpointProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF0BA6C222C8C56C00AA3CA3 /* EndpointProvider.swift */; };
 		BF5EC44C22C529AA0068A24C /* Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF5EC44222C529AA0068A24C /* Networking.framework */; };
 		BF5EC45122C529AA0068A24C /* NetworkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF5EC45022C529AA0068A24C /* NetworkingTests.swift */; };
@@ -30,6 +31,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		149B113FA77B37497D09AB7D /* Pods_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		54D8CEC14DF8502982911048 /* Pods-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Networking.release.xcconfig"; path = "../Pods/Target Support Files/Pods-Networking/Pods-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		BF0BA6C222C8C56C00AA3CA3 /* EndpointProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointProvider.swift; sourceTree = "<group>"; };
 		BF5EC44222C529AA0068A24C /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B39647A9CDFEDEB2849BF7AB /* Pods_Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +72,7 @@
 		A4670897EA0F6361F5EE57E0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				149B113FA77B37497D09AB7D /* Pods_Networking.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";

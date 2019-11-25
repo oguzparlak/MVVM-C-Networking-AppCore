@@ -32,6 +32,7 @@
 		BFF3459922C92E8700D7470C /* MovieListingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3459722C92E8700D7470C /* MovieListingCell.swift */; };
 		BFF3459A22C92E8700D7470C /* MovieListingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF3459822C92E8700D7470C /* MovieListingCell.xib */; };
 		BFF3459C22C9302900D7470C /* TVShowCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF3459B22C9302900D7470C /* TVShowCellViewModel.swift */; };
+		D8DDA29F35638ACE71246EF1 /* Pods_MVVM_C_App_Core_Networking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DDE3D49166EE0FB3886B9E36 /* Pods_MVVM_C_App_Core_Networking.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		95D431D1880253199DA0EF7A /* Pods-MVVM-C-App-Core-Networking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-App-Core-Networking.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-C-App-Core-Networking/Pods-MVVM-C-App-Core-Networking.debug.xcconfig"; sourceTree = "<group>"; };
+		AA20893E4835DF8CF8ECA271 /* Pods-MVVM-C-App-Core-Networking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-C-App-Core-Networking.release.xcconfig"; path = "Target Support Files/Pods-MVVM-C-App-Core-Networking/Pods-MVVM-C-App-Core-Networking.release.xcconfig"; sourceTree = "<group>"; };
 		BF014FE222CE7D42006669CD /* TVShowListingView+UITableViewDataSourcePrefetching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TVShowListingView+UITableViewDataSourcePrefetching.swift"; sourceTree = "<group>"; };
 		BF014FE422CE819C006669CD /* Core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF014FE722CE819C006669CD /* Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +97,7 @@
 		BFF3459722C92E8700D7470C /* MovieListingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieListingCell.swift; sourceTree = "<group>"; };
 		BFF3459822C92E8700D7470C /* MovieListingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieListingCell.xib; sourceTree = "<group>"; };
 		BFF3459B22C9302900D7470C /* TVShowCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TVShowCellViewModel.swift; sourceTree = "<group>"; };
+		DDE3D49166EE0FB3886B9E36 /* Pods_MVVM_C_App_Core_Networking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MVVM_C_App_Core_Networking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +107,7 @@
 			files = (
 				BF014FE822CE819C006669CD /* Networking.framework in Frameworks */,
 				BF014FE522CE819C006669CD /* Core.framework in Frameworks */,
+				D8DDA29F35638ACE71246EF1 /* Pods_MVVM_C_App_Core_Networking.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -123,6 +128,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6E7AF7E20FDCEFD9FE9D47DA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				95D431D1880253199DA0EF7A /* Pods-MVVM-C-App-Core-Networking.debug.xcconfig */,
+				AA20893E4835DF8CF8ECA271 /* Pods-MVVM-C-App-Core-Networking.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		BF0BA6BF22C8C4D400AA3CA3 /* Networking */ = {
 			isa = PBXGroup;
 			children = (
@@ -209,6 +224,7 @@
 				BF5EC48522C52A690068A24C /* Frameworks */,
 				BF5EC3D522C527940068A24C /* MVVM-C-App-Core-Networking */,
 				BF5EC3D422C527940068A24C /* Products */,
+				6E7AF7E20FDCEFD9FE9D47DA /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -245,6 +261,7 @@
 		BF5EC48522C52A690068A24C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DDE3D49166EE0FB3886B9E36 /* Pods_MVVM_C_App_Core_Networking.framework */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -267,10 +284,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BF5EC3FB22C527940068A24C /* Build configuration list for PBXNativeTarget "MVVM-C-App-Core-Networking" */;
 			buildPhases = (
+				6D97E8B53F8C050DD12C6F4B /* [CP] Check Pods Manifest.lock */,
 				BF5EC3CF22C527940068A24C /* Sources */,
 				BF5EC3D022C527940068A24C /* Frameworks */,
 				BF5EC3D122C527940068A24C /* Resources */,
 				BF17C62722C8FFF80064402F /* Embed Frameworks */,
+				0C4B413B395C6B2BFC6F61E3 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -387,6 +406,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C4B413B395C6B2BFC6F61E3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM-C-App-Core-Networking/Pods-MVVM-C-App-Core-Networking-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-MVVM-C-App-Core-Networking/Pods-MVVM-C-App-Core-Networking-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-MVVM-C-App-Core-Networking/Pods-MVVM-C-App-Core-Networking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D97E8B53F8C050DD12C6F4B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-MVVM-C-App-Core-Networking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BF5EC3CF22C527940068A24C /* Sources */ = {
@@ -580,6 +641,7 @@
 		};
 		BF5EC3FC22C527940068A24C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 95D431D1880253199DA0EF7A /* Pods-MVVM-C-App-Core-Networking.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -599,6 +661,7 @@
 		};
 		BF5EC3FD22C527940068A24C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AA20893E4835DF8CF8ECA271 /* Pods-MVVM-C-App-Core-Networking.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
