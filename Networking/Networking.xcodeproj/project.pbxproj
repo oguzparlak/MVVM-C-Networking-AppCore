@@ -103,12 +103,12 @@
 				BF5EC44522C529AA0068A24C /* Networking.h */,
 				BF5EC44622C529AA0068A24C /* Info.plist */,
 				BF5EC48B22C55DB60068A24C /* RequestConfigurator.swift */,
+				BF0BA6C222C8C56C00AA3CA3 /* EndpointProvider.swift */,
 				BF5EC48D22C55EA80068A24C /* Constants.swift */,
 				BF5EC48F22C55ED80068A24C /* ApiRouter.swift */,
 				BF5EC49122C55F0A0068A24C /* ApiError.swift */,
 				BF5EC49322C55F2A0068A24C /* ApiClient.swift */,
 				BF5EC49522C560410068A24C /* Reachability.swift */,
-				BF0BA6C222C8C56C00AA3CA3 /* EndpointProvider.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";

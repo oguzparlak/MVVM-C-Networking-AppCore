@@ -9,6 +9,7 @@
 import Foundation
 import Core
 import Networking
+import RxSwift
 
 class TVShowViewModel {
     
