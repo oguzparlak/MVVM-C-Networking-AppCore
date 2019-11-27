@@ -23,8 +23,25 @@ class TVShowListingView: UIViewController, Storyboarded {
     // MARK: - Private Variables
     private let disposeBag = DisposeBag()
     
+}
+
+// MARK: - Lifecycle
+extension TVShowListingView {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        tvShowViewModel = TVShowViewModel()
+        initTableView()
+    }
+    
+}
+
+// MARK: - Private Helpers
+extension TVShowListingView {
+ 
     // MARK: - Methods
-    func initTableView() {
+    private func initTableView() {
         tableView.register(MovieListingCell.self)
         
         // Cell Binding
@@ -56,18 +73,6 @@ class TVShowListingView: UIViewController, Storyboarded {
                 print(cellViewModel)
             })
             .disposed(by: disposeBag)
-    }
-    
-}
-
-// MARK: - Lifecycle
-extension TVShowListingView {
-    
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        tvShowViewModel = TVShowViewModel()
-        initTableView()
     }
     
 }
