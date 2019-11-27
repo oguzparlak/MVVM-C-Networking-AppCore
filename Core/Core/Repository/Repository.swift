@@ -8,12 +8,13 @@
 
 import Foundation
 import Networking
+import RxSwift
 
 public protocol Repository {
     
     associatedtype T
     
-    func getLocalDataSource() -> T
+    func getLocalDataSource() -> Observable<T>
     
-    func getRemoteDataSource(responseCallback: @escaping (Result<T, ApiError>) -> Void)
+    func getRemoteDataSource() -> Observable<T>
 }

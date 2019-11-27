@@ -25,19 +25,37 @@ class TVShowListingView: UIViewController, Storyboarded {
     
     // MARK: - Methods
     func initTableView() {
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.backgroundColor = .black
-        tableView.register(UINib(nibName: "MovieListingCell", bundle: nil), forCellReuseIdentifier: "MovieListingCell")
+        tableView.register(MovieListingCell.self)
         
-        tableView.rx.setPrefetchDataSource(self).disposed(by: disposeBag)
-        tableView.rx.setDataSource(self).disposed(by: disposeBag)
-        tableView.rx.itemSelected
-            .subscribe(onNext: { (indexPath) in
-                print("Cell tapped at \(indexPath.row)")
-            }, onCompleted: {
-                print("Completed")
+        // Cell Binding
+        tvShowViewModel?
+            .tvShowObservables
+            .bind(to: tableView.rx.items(cellType: MovieListingCell.self)) { [weak self] (row, element, cell) in
+                let tvShowViewModels = self?.tvShowViewModel?.tvShowCellViewModels
+                let tvShowCellViewModel = tvShowViewModels?[row]
+                cell.tvShowViewModel = tvShowCellViewModel
+            }
+            .disposed(by: disposeBag)
+        
+        // Pagination
+        tableView.rx
+            .willDisplayCell
+            .subscribe(onNext: { [weak self] (cell: UITableViewCell, indexPath: IndexPath) in
+                guard let tvShowViewModels: [TVShowCellViewModel] = self?.tvShowViewModel?.tvShowCellViewModels else { return }
+                let shouldFetchRemoteData: Bool = tvShowViewModels.count == indexPath.row + 1
+                if shouldFetchRemoteData {
+                    self?.tvShowViewModel?.fetchTVShows(shouldApplyPagination: true)
+                }
             })
-        .disposed(by: disposeBag)
+            .disposed(by: disposeBag)
+        
+        // Item Selected
+        tableView.rx
+            .modelSelected(TVShowCellViewModel.self)
+            .subscribe(onNext: { (cellViewModel) in
+                print(cellViewModel)
+            })
+            .disposed(by: disposeBag)
     }
     
 }
@@ -48,7 +66,7 @@ extension TVShowListingView {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        tvShowViewModel = TVShowViewModel(tvShowInteractor: self)
+        tvShowViewModel = TVShowViewModel()
         initTableView()
     }
     

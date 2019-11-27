@@ -9,6 +9,7 @@
 import Foundation
 import Networking
 import Core
+import RxSwift
 
 class TVShowRepository: Repository {
     
@@ -39,12 +40,13 @@ class TVShowRepository: Repository {
         self.requestConfigurator = requestConfigurator
     }
     
-    func getLocalDataSource() -> TVShowContainer? {
-        return dataManager?.loadAllTVShows()
+    func getLocalDataSource() -> Observable<TVShowContainer?> {
+        guard let dataManager = dataManager else { return Observable.just(TVShowContainer()) }
+        return dataManager.loadAllTVShows()
     }
     
-    func getRemoteDataSource(responseCallback: @escaping (Result<TVShowContainer?, ApiError>) -> Void) {
-        ApiClient.request(ApiRouter(requestConfigurator: requestConfigurator), completion: responseCallback)
+    func getRemoteDataSource() -> Observable<TVShowContainer?> {
+        return ApiClient.request(ApiRouter(requestConfigurator: requestConfigurator))
     }
     
 }

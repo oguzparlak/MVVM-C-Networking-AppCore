@@ -6,9 +6,12 @@ workspace 'MVVM-C-App-Core-Networking'
 
 def rxSwift
   pod 'RxSwift', '~> 5'
-  pod 'RxCocoa', '~> 5'
 end
 
+def rxCocoa
+  pod 'RxCocoa', '~> 5'
+end
+  
 def alamofire
   pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'alamofire5'
 end
@@ -22,8 +25,16 @@ target 'MVVM-C-App-Core-Networking' do
   use_frameworks!
   project 'MVVM-C-App-Core-Networking'
   rxSwift
+  rxCocoa
   alamofire
   uiPods
+end
+
+target 'Core' do
+  use_frameworks!
+  project 'Core/Core'
+  rxSwift
+  rxCocoa
 end
 
 target 'Networking' do

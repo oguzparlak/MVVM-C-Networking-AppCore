@@ -9,6 +9,7 @@
 import Foundation
 import Core
 import Networking
+import PKHUD
 import RxSwift
 
 class TVShowViewModel {
@@ -17,38 +18,43 @@ class TVShowViewModel {
         didSet {
             // Update UI
             updateCellViewModels()
-            tvShowInteractor.shouldUpdateTableView()
         }
     }
     
+    var tvShowObservables = PublishSubject<[TVShowCellViewModel]>()
     var tvShowCellViewModels: [TVShowCellViewModel] = []
     
     private let tvShowRepository: TVShowRepository
-    private let tvShowInteractor: TVShowInteractor
+    private let disposeBag = DisposeBag()
     
-    init(tvShowRepository: TVShowRepository = TVShowRepository(requestConfigurator: RequestConfigurator(path: TVShowEndPoint.trendingTvShows(timeWindow: "week").provideUrl(), parameters: [Constants.Parameters.api_key : Constants.tmdbApiKey])), tvShowInteractor: TVShowInteractor) {
+    init(
+        tvShowRepository: TVShowRepository = TVShowRepository(requestConfigurator: RequestConfigurator(path: TVShowEndPoint.trendingTvShows(timeWindow: "week").provideUrl(),parameters: [Constants.Parameters.api_key : Constants.tmdbApiKey]))) {
         self.tvShowRepository = tvShowRepository
-        self.tvShowInteractor = tvShowInteractor
         fetchTVShows()
     }
     
     func fetchTVShows(shouldApplyPagination: Bool = false) {
+        HUD.show(.progress)
         if shouldApplyPagination { tvShowRepository.incrementPage() }
-        self.tvShowRepository.getRemoteDataSource(responseCallback: { [weak self] result in
-            switch result {
-            case .success(let tvShows):
+        tvShowRepository
+            .getRemoteDataSource()
+            .subscribe(onNext: { [weak self] tvShows in
                 self?.tvShowContainer = tvShows
-            case .error(let error):
+            }, onError: { (error) in
                 print(error)
-            }
-        })
+            }, onCompleted: {
+                HUD.hide()
+            })
+            .disposed(by: disposeBag)
     }
     
     func updateCellViewModels() {
         let tvShows = tvShowContainer?.results ?? []
         for tvShow in tvShows {
-            tvShowCellViewModels.append(TVShowCellViewModel(tvShow: tvShow))
+            let tvShowCellViewModel: TVShowCellViewModel = TVShowCellViewModel(tvShow: tvShow)
+            tvShowCellViewModels.append(tvShowCellViewModel)
         }
+        tvShowObservables.on(.next(tvShowCellViewModels))
     }
     
 }

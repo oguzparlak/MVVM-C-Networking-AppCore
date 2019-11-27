@@ -8,6 +8,7 @@
 
 import Foundation
 import Core
+import RxSwift
 
 class TVShowDataManager: KeyValueManager<TVShowContainer, TVShowContainer> {
     
@@ -17,12 +18,12 @@ class TVShowDataManager: KeyValueManager<TVShowContainer, TVShowContainer> {
     }
     
     // MARK: - Public methods
-    func loadAllTVShows() ->  TVShowContainer? {
-        return self.load(with: "tv_shows")
+    func loadAllTVShows() ->  Observable<TVShowContainer?> {
+        return Observable.just(TVShowContainer())
     }
     
-    func saveAllTVShows(data: TVShowContainer?) {
-        self.save(with: "tv_shows", data: data)
+    func saveAllTVShows(data: Observable<TVShowContainer?>) {
+        // self.save(with: "tv_shows", data: data)
     }
     
 }
